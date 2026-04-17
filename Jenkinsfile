@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/GoviGt650/jenkins-test.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t myapp .'
