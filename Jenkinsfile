@@ -46,10 +46,15 @@ pipeline {
             steps {
                 sh '''
                 ssh -o StrictHostKeyChecking=no ubuntu@$EC2_IP "
+                
+                aws ecr get-login-password --region $AWS_REGION | \
+                docker login --username AWS --password-stdin $ECR_REPO &&
+                
                 docker pull $ECR_REPO:latest &&
                 docker stop myapp || true &&
                 docker rm myapp || true &&
                 docker run -d -p 5000:5000 --name myapp $ECR_REPO:latest
+                
                 "
                 '''
             }
