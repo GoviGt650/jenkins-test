@@ -300,7 +300,7 @@ HTML_PAGE = """
       <div>
         <div class="hero-badge"><i class="fas fa-satellite-dish"></i> // GOVIND // PORTAL // v.INFINITY</div>
         <h1 class="glitch">GOVIND JADAPALLI</h1>
-        <h1 style="font-size: 2rem; margin-top: -10px;">⚡︎ WEB ARCHITECT & FUTURIST</h1>
+        <h1 style="font-size: 2rem; margin-top: -10px;">⚡︎ HELLLLLLLLOOOOOOOO ARCHITECT & FUTURIST</h1>
         <p class="hero-desc" id="typed-desc"></p>
         <button class="quantum-btn" id="quantumConnectBtn"><i class="fas fa-microchip"></i> RESONATE WITH ME</button>
         <div class="social-icons" style="margin-top: 1.5rem;">
